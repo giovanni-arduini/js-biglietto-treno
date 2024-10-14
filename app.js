@@ -29,15 +29,20 @@ let finalPrice = standardPrice;
 // Ricalcolare il prezzo
 if (userAge < 18) {
   finalPrice = standardPrice - standardPrice * discountJunior;
-  console.log(`Il prezzo scontato per minorenni è di ${finalPrice}€`);
+  console.log(
+    `Il prezzo scontato per minorenni è di ${finalPrice.toFixed(2)}€`
+  );
 }
 
 // ALTRIMENTI SE passeggero >65
 //      -> Applicare sconto over 65
 else if (userAge >= 65) {
   finalPrice = standardPrice - standardPrice * discountSenior;
-  console.log(`Il prezzo scontato per Over 65 è di ${finalPrice}€`);
+  console.log(`Il prezzo scontato per Over 65 è di ${finalPrice.toFixed(2)}€`);
+
+  // ALTRIMENTI
+} else {
+  console.log(`Il prezzo del tuo viaggio è di ${finalPrice.toFixed(2)}€`);
 }
 
-// ALTRIMENTI
 // Mostrare prezzo finale
