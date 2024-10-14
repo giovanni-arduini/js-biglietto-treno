@@ -4,9 +4,11 @@ console.log("Calcola il tuo Biglietto");
 
 // Chiedere numero km
 const travelLenght = parseInt(prompt("Inserire il numero di Km del viaggio"));
-console.log(travelLenght);
+console.log(`La lunghezza del viaggio è di ${travelLenght}`);
 
 // Chiedere età passeggero
+const userAge = parseInt(prompt("Inserire l'età del passeggero"));
+console.log(`L'età del passeggero è ${userAge}`);
 
 // ELABORAZIONE
 
