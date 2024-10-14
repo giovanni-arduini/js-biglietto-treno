@@ -17,6 +17,8 @@ const discountJunior = 0.2;
 const discountSenior = 0.4;
 
 // Definire prezzo standard
+const standardPrice = travelLenght * 0.21;
+console.log(`Il prezzo standard delm viaggio è di ${standardPrice}€`);
 
 // OUTPUT
 
