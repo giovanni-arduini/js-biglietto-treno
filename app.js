@@ -18,7 +18,7 @@ const discountSenior = 0.4;
 
 // Definire prezzo standard
 const standardPrice = travelLenght * 0.21;
-console.log(`Il prezzo standard del viaggio è di ${standardPrice}€`);
+// console.log(`Il prezzo standard del viaggio è di ${standardPrice}€`);
 
 // OUTPUT
 
@@ -29,6 +29,8 @@ let finalPrice = standardPrice;
 // Ricalcolare il prezzo
 if (userAge < 18) {
   finalPrice = standardPrice - standardPrice * discountJunior;
+  console.log(`Il prezzo standard del viaggio è di ${standardPrice}€`);
+
   console.log(
     `Il prezzo scontato per minorenni è di ${finalPrice.toFixed(2)}€`
   );
@@ -38,6 +40,8 @@ if (userAge < 18) {
 //      -> Applicare sconto over 65
 else if (userAge >= 65) {
   finalPrice = standardPrice - standardPrice * discountSenior;
+  console.log(`Il prezzo standard del viaggio è di ${standardPrice}€`);
+
   console.log(`Il prezzo scontato per Over 65 è di ${finalPrice.toFixed(2)}€`);
 
   // ALTRIMENTI
