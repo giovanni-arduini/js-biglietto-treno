@@ -13,6 +13,9 @@ console.log(`L'età del passeggero è ${userAge}`);
 // ELABORAZIONE
 
 // Definire classi di sconto
+const discountJunior = 0.2;
+const discountSenior = 0.4;
+
 // Definire prezzo standard
 
 // OUTPUT
