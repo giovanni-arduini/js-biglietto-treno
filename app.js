@@ -1,6 +1,11 @@
 // ACQUISIZIONE DATI
 
+console.log("Calcola il tuo Biglietto");
+
 // Chiedere numero km
+const travelLenght = parseInt(prompt("Inserire il numero di Km del viaggio"));
+console.log(travelLenght);
+
 // Chiedere età passeggero
 
 // ELABORAZIONE
